@@ -1,0 +1,16 @@
+[package]
+name = "application"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+lambda_runtime = "0.13"
+aws-config = "1.5"
+aws-sdk-lambda = "1.66"
+aws-sdk-s3 = "1.71"
+serde_json = "1"
+aws_lambda_events = { version = "0.15", default-features = false, features = [
+] }
+tokio = "1"
+core = { path = "../core" }
